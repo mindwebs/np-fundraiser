@@ -16,13 +16,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script type='text/javascript'
+        src='https://platform-api.sharethis.com/js/sharethis.js#property=undefined&product=undefined'
+        async='async'></script>
 </head>
 
 <body id="page-top">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bn_IN/sdk.js#xfbml=1&version=v11.0"
+        nonce="PZB7SJRa"></script>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+            <a class="navbar-brand" href="#page-top">Help Aniruddha</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -31,6 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">Cause</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate Now</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -40,16 +47,73 @@
     <header class="masthead">
         <div class="container">
             <div class="masthead-subheading">Fundraiser Initiative For</div>
-            <div class="masthead-heading text-uppercase">Aniruddha Roy</div>
+            <div class="masthead-heading text-uppercase">Aniruddha Ray</div>
             <a class="btn btn-primary btn-xl text-uppercase" href="#about">Know the Cause</a>
         </div>
     </header>
-    <!-- Services-->
+
+    <section class="page-section"
+        style="padding-top: 2rem !important; margin-bottom: -3rem !important; padding-bottom: 0rem !important;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-xs-12 mb-2">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Fundraising for Life</h5>
+                            <h4>₹ 4,86,792
+                                <span style="font-size: 1.2rem; font-weight: 500;">raised of <strong>₹
+                                        15,00,000</strong> goal.</span>
+                            </h4>
+                            <br />
+                            <div class="progress">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                    role="progressbar" style="width: 32%;" aria-valuenow="32" aria-valuemin="0"
+                                    aria-valuemax="100">32%</div>
+                            </div>
+                            <br />
+                            <a href="#donate" class="btn btn-lg btn-warning">₹ Donate Now</a>
+                            &nbsp;&nbsp;
+                            <!-- <a href="#share" class="btn btn-lg btn-info">Share This Campaign</a> -->
+                            <a href="https://www.facebook.com/sharer.php?u=https://helpaniruddha.com" class="btn btn-lg btn-info"><i class="fab fa-facebook-f"></i> Share</a>
+                            <a href="whatsapp://send?text=Help Aniruddha to cope up with COVID by contributing at https://helpaniruddha.com" data-action="share/whatsapp/share"  
+                            target="_blank" class="btn btn-lg btn-success"><i class="fab fa-whatsapp"></i> Share</a>
+                            <a href="http://twitter.com/share?url=https://helpaniruddha.com&text=Help%20Aniruddha" class="btn btn-lg btn-secondary"><i class="fab fa-twitter"></i> Share</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12 mb-2">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <ul class="nav nav-pills" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Recent Updates</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Recent Comments</button>
+                                </li>
+
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="padding: 0.75rem;">
+                                    <p>Any recent updates will be shared here.</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="padding: 0.75rem;">
+                                    <div class="fb-comments" data-href="https://helpaniruddha.com" data-width="100%" data-numposts="5"></div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="page-section" id="about">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">About the Cause</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Drastically COVID affected individual needs help to replay
+                    <strong class="text-danger">₹ 45 Lakhs+ bills.</strong></h3>
             </div>
             <div class="row">
                 <div class="col-md-6" style="text-align: justify; justify-content: space-between;">
@@ -75,36 +139,72 @@
                 <div class="col-md-6 text-center">
                     <img src="./assets/img/team/1.jpg" style="border-radius: 50%;" width="50%" alt="Aniruddha Ray" />
                     <br /><br />
-                    <p>Aniruddha Roy, Engineer, CTS</p>
+                    <p>Aniruddha Ray, Engineer, CTS</p>
                 </div>
             </div>
-            <div class="text-center mt-2">
+        </div>
+    </section>
+    <section class="page-section" id="donate" style="margin-top: -2rem;">
+        <div class="container">
+            <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contribute to the Cause</h2>
                 <!-- <h3 class="section-subheading text-muted">Bank Account Details</h3> -->
             </div>
-
             <div class="row">
-                <p class="text-center">Bank Account Details</p>
-                <div class="col-4"></div>
-                <div class="col-6">
-                    <p>
-                        Account Name   : <strong>Dolly Roy</strong><br/>
-                        Account Number : <strong>50100263248199</strong><br/>
-                        IFSC CODE      : <strong>HDFC0000718</strong><br/>
-                        Address : Dn - 1, Eternity Building,Sector V,Salt Lake City
-                    </p>
+                <!-- <p class="text-center">Bank Account Details</p> -->
+                <!-- <div class="col-md-2"></div> -->
+                <div class="col-md-6 mb-2">
+                    <div class="card">
+                        <h5 class="card-header bg-success text-white">NEFT/IMPS Bank Transfer</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Help Aniruddha Recover</h5>
+                            <p class="card-text">By sending your generous contributions to the following details.</p>
+                            <p style="margin-left: 2rem;">
+                                Account Name : <strong>Dolly Roy</strong><br />
+                                Account Number : <strong>50100263248199</strong><br />
+                                IFSC CODE : <strong>HDFC0000718</strong><br />
+                                Branch : <strong>HDFC Bank</strong>, DN - 1, Eternity Building,Sector V,Salt Lake City
+                            </p>
+                            <span style="font-style: italic;">This acccount belongs to Aniruddha's Mother.</span>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="card">
+                        <h5 class="card-header bg-info text-white">Direct Payment Methods</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">UPI, Credit, Debit Card</h5>
+                            <p class="card-text">Direct Payment Methods coming soon.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr/>
+        </div>
+    </section>
 
-            <div class="text-center mt-2">
+    <!-- <section class="page-section" id="social" style="margin-top: -5rem !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Recent Comments</h3>
+                    <div class="fb-comments" data-href="https://helpaniruddha.com" data-width="100%" data-numposts="5"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <hr/>
+    <section class="page-section" id="documents" style="margin-top: -3rem;">
+        <div class="container">
+            <div class="text-center">
                 <h2 class="section-heading text-uppercase">Hospitalization Documents</h2>
                 <h3 class="section-subheading text-muted">Bills and Backing up Documents</h3>
             </div>
-            <div class="row">
-                <div class="col-1">
+            <div class="row" style="margin-top: -2rem;">
+                <div class="col-md-1">
                 </div>
-                <div class="col-10 text-center">
+                <div class="col-md-10 text-center">
                     <!-- <p>Hospital Bill</p> -->
                     <img src="./assets/documents/image1.png" width="100%" alt="Hospital Bill" />
                     <br />
@@ -159,9 +259,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">Fundraiser for A Cause</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <!-- <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
+                    <span>An Initiative by Family and Well Wishers of Aniruddha</span>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
@@ -175,6 +276,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

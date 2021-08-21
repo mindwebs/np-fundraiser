@@ -19,6 +19,27 @@
     <script type='text/javascript'
         src='https://platform-api.sharethis.com/js/sharethis.js#property=undefined&product=undefined'
         async='async'></script>
+
+    <style>
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -161,32 +182,50 @@
                     <img src="./assets/img/team/1.jpg" style="border-radius: 50%;" width="50%" alt="Aniruddha Ray" />
                     <br /><br />
                     <p>Aniruddha Ray, Engineer, CTS</p>
-                    <br/>
+                    <br />
                     <p style="text-align: left;">Cost Summary - </p>
                     <table style="border-collapse:collapse;border:none; text-align: left;">
                         <tbody>
                             <tr>
-                                <td style="width: 239.4pt;border: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Approximate overall cost of treatment</span></p>
+                                <td
+                                    style="width: 239.4pt;border: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Approximate overall cost of treatment</span></p>
                                 </td>
-                                <td style="width: 239.4pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Rs. 48,75,000</span></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 239.4pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Amount already spent in the treatment</span></p>
-                                </td>
-                                <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Rs. 34,00,000</span></p>
+                                <td
+                                    style="width: 239.4pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Rs. 48,75,000</span></p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="width: 239.4pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Amount for which we need assistance</span></p>
+                                <td
+                                    style="width: 239.4pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Amount already spent in the treatment</span></p>
                                 </td>
-                                <td style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
-                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">Rs. 15,00,000</span></p>
+                                <td
+                                    style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Rs. 34,00,000</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 239.4pt;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Amount for which we need assistance</span></p>
+                                </td>
+                                <td
+                                    style="width: 239.4pt;border-top: none;border-left: none;border-bottom: 1pt solid black;border-right: 1pt solid black;padding: 0cm 5.4pt;vertical-align: top;">
+                                    <p
+                                        style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
+                                        <span style="font-size:19px;">Rs. 15,00,000</span></p>
                                 </td>
                             </tr>
                         </tbody>
@@ -196,7 +235,7 @@
             </div>
         </div>
     </section>
-    <section class="page-section" id="donate" style="margin-top: -2rem;">
+    <section class="page-section" id="donate" style="margin-top: -10rem;">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contribute to the Cause</h2>
@@ -205,9 +244,10 @@
             <div class="row">
                 <!-- <p class="text-center">Bank Account Details</p> -->
                 <!-- <div class="col-md-2"></div> -->
-                <div class="col-md-6 mb-2">
+                <div class="col-md-6 mb-1">
                     <div class="card">
-                        <h5 class="card-header bg-success text-white">NEFT/IMPS Bank Transfer</h5>
+                        <h5 class="card-header bg-success text-white"><i class="fa fa-university"></i> NEFT/IMPS Bank
+                            Transfer</h5>
                         <div class="card-body">
                             <h5 class="card-title">Help Aniruddha Recover</h5>
                             <p class="card-text">By sending your generous contributions to the following details.</p>
@@ -222,9 +262,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-2">
+                <div class="col-md-6 mb-1">
                     <div class="card">
-                        <h5 class="card-header bg-info text-white">Direct Payment Methods</h5>
+                        <h5 class="card-header bg-info text-white"><i class="fa fa-rupee-sign"></i> Direct Payment
+                            Methods</h5>
                         <div class="card-body">
                             <h5 class="card-title">UPI, Credit, Debit Card</h5>
                             <p class="card-text">Direct Payment Methods coming soon.</p>
@@ -290,21 +331,26 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Get in touch if you need further details.</h3>
             </div>
             <div class="row">
                 <div class="col-md-6 text-white">
-                    <p>Phone Number - </p>
-                    <p>Email Address - </p>
-                    <p>Associate Address - </p>
+                    <p>Phone Number - 9836741400</p>
+                    <p>Email Address - aniruddharay8@gmail.com</p>
+                    <p>Associate Address - 43/5 Purba Sinthee Road, Dumdum, Kol - 030</p>
                 </div>
                 <div class="col-md-6 text-white">
 
-                    <p>Other Modes of Communication - </p>
+                    <p style="font-size: 1.2rem;">Other Modes of Communication</p>
+                    <p>WhatsApp Number - 9836741400</p>
                 </div>
             </div>
         </div>
     </section>
+    <a href="https://api.whatsapp.com/send?phone=919836741400&text=I%20wish%20to%20contribute%20to%20the%20cause%20&source=&data="
+        class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
     <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">

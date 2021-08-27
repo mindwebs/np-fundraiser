@@ -1,0 +1,5 @@
+Create .env with
+1. PORT
+2. STRIPE_SECRET_KEY
+3. STRIPE_PUB_KEY
+...

@@ -8,14 +8,14 @@
     <meta name="author" content="" />
     <title>Help Aniruddha in Paying Costly Medical Bill - A Fundraiser Initiative by Well Wishers & Families of a COVID Affected Individual</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <script type='text/javascript'
         src='https://platform-api.sharethis.com/js/sharethis.js#property=undefined&product=undefined'
         async='async'></script>
@@ -282,14 +282,20 @@
                         <div class="card-body">
                             <!-- <h5 class="card-title">UPI, Credit, Debit Card</h5>
                             <p class="card-text">Direct Payment Methods coming soon.</p> -->
-                            <div class="row">
-                                <div class="col-9">
-                                    <input class="form-control" type="number" min="0" name="amount" id="amount" maxlength="10000" placeholder="Enter your donation amount"/>
+                            <form action="/pay" method="post" class="row">
+                                <div class="col-6 mb-3" style="padding-right: 0.25rem;">
+                                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required/>
                                 </div>
-                                <div class="col-3">
-                                    <input type="button" class="btn btn-success" value="Donate Now" name="pay" id="pay" />
+                                <div class="col-6 mb-3" style="padding-right: 0.25rem;">
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Enter your email" required/>
                                 </div>
-                            </div>
+                                <div class="col-9 mb-3" style="padding-right: 0.25rem;">
+                                    <input class="form-control" type="number" min="0" name="amount" id="amount" maxlength="10000" placeholder="Enter your donation amount" required/>
+                                </div>
+                                <div class="col-3 mb-3" style="padding-right: 0.25rem;">
+                                    <button type="submit" class="btn btn-success" value="Donate Now" name="pay" id="pay">Donate Now</button>
+                                </div>
+                            </form>
                             <br/>
                             <p class="card-text">Direct Payment Methods - Powered by Stripe.</p>
                         </div>
@@ -403,7 +409,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
 
 </body>
 

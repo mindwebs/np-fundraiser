@@ -6,9 +6,8 @@ Create .env with
 
 To run the docker file - 
 
-docker image rm -f np_fundraiser
-docker build -t np_fundraiser .
-
-docker rm -f np-fundraiser
+docker image rm -f np_fundraiser  
+docker build -t np_fundraiser .  
+docker rm -f np-fundraiser  
 
 docker run -d --expose 3720 --network=ngproxy_default --ip 172.18.0.9 --name np-fundraiser np_fundraiser

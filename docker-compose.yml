@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+    stripeha-api:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./src:/usr/src/app/src
+        container_name: np-fundraiser
+        expose:
+            - '3720'
+        ports:
+            - '3720:3720'
+        command: ${CMD}

@@ -4,7 +4,7 @@ const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 // amount to be passed in lower currency unit (paise for INR)
 const confirmPaymentIntent = async (req, res) => {
     let { amount, name, email } = req.body;
-    amount = parseInt(amount * 100, 10);
+    amount *= 100;
 
     try {
         const customer = await stripe.customers.create({
@@ -13,9 +13,8 @@ const confirmPaymentIntent = async (req, res) => {
         });
         const paymentIntent = await stripe.paymentIntents.create({
             amount: amount,
-            currency: currency,
+            currency: 'inr',
             customer: customer.id,
-            confirm: true,
             payment_method_types: ["card"],
             description: "Stripe API Payment",
             receipt_email: email,
@@ -23,6 +22,7 @@ const confirmPaymentIntent = async (req, res) => {
         const clientSecret = paymentIntent.client_secret
         res.render('pay', { clientSecret, PUB_KEY: process.env.STRIPE_PUB_KEY })
     } catch (error) {
+        // console.log(error)
         return res.status(500).json({ message: "failure", error });
     }
 };

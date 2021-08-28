@@ -23,7 +23,7 @@ const confirmPaymentIntent = async (req, res) => {
         res.render('pay', { clientSecret, PUB_KEY: process.env.STRIPE_PUB_KEY })
     } catch (error) {
         // console.log(error)
-        return res.status(500).json({ message: "failure", error });
+        res.render('failure', { error })
     }
 };
 

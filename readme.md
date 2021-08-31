@@ -7,6 +7,7 @@ Create .env with
 To run the docker file - 
 
 docker image rm -f np_fundraiser  
+docker stop np-fundraiser  
 docker build -t np_fundraiser .  
 docker rm -f np-fundraiser  
 

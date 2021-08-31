@@ -3,7 +3,12 @@ const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 // amount to be passed in lower currency unit (paise for INR)
 const confirmPaymentIntent = async (req, res) => {
-    let { amount, name, email } = req.body;
+    let { amount, name, email, currency } = req.body;
+    
+    if (currency == 'usd') {
+        amount *= 74;
+    }
+    
     amount *= 100;
 
     try {

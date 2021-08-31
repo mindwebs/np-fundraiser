@@ -293,6 +293,12 @@
                                     <input class="form-control" type="number" min="0" name="amount" id="amount" maxlength="10000" placeholder="Enter your donation amount" required/>
                                 </div>
                                 <div class="col-3 col-xs-12 mb-3" style="padding-right: 0.25rem;">
+                                    <select class="form-control" name="currency" id="currency" required>
+                                        <option value="inr" selected>INR</option>
+                                        <option value="usd">USD</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-xs-12 mb-12" style="padding-right: 0.25rem;">
                                     <button type="submit" class="btn btn-success" value="Donate Now" name="pay" id="pay">Donate Now</button>
                                 </div>
                             </form>
